@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1e29afc3e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Activity</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Aspiring Software Engineer</p>
+          <h1>Hi, I'm <span>Mateo</span> Flores<br />from Ecuador</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------about------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/mateoflores.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              <br />I'm Mateo Flores, 20, currently studying Software
+              Engineering at Northwestern College. My academic journey started
+              with Computer Science at West Virginia State University.
+              Originally from <strong>Quito-Ecuador,</strong> I'm passionate
+              about tennis and applying my skills to real-world projects for
+              organizational growth. Learning and taking on tech challenges
+              drive me, and I'm excited to collaborate and contribute value to
+              projects.
+            </p>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills', event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience', event)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education', event)">
+                Education
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web development</span><br />Websites Development</li>
+                <li><span>Machine Learning</span><br />RL learning</li>
+                <li><span>Database Managment</span><br />SQL</li>
+                <li><span>Networking</span><br />Networking connections</li>
+                <li><span>Cybersecurity</span><br /></li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>IT Technician</span><br />Solved a countless number of
+                  computer and network problems for students, faculty, and
+                  staff.
+                </li>
+                <li>
+                  <span>Computer Science Club</span><br />Vibrant community of
+                  students passionate about coding, software development,
+                  cybersecurity, and all things tech.
+                </li>
+                <li>
+                  <span>Front Desk Athletic Department</span><br />Provided me
+                  with valuable experiences daily. I continually utilize
+                  computer systems to assist staff and visitors while honing my
+                  customer service skills
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Education</span><br /><br />Northwestern College Iowa -
+                  Software Engineering -> May 2025 <br /><br />West Virginia
+                  State University (transfer) - Computer Science -> Aug 2021 -
+                  May 2023
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------services------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Activity</h1>
+        <div class="services-list">
+          <div>
+            <h2>Interests</h2>
+            <p>Everything that makes me a better professional.</p>
+            <button
+              id="interestsBtn"
+              onclick="toggleSection('interests', 'interestsBtn')"
+              class="toggle-button"
+            >
+              Learn more
+            </button>
+          </div>
+          <div>
+            <h2>Sports</h2>
+            <p>Top tennis player from Ecuador competing D2 and NAIA level.</p>
+            <button
+              id="sportsBtn"
+              onclick="toggleSection('sports', 'sportsBtn')"
+              class="toggle-button"
+            >
+              Learn more
+            </button>
+          </div>
+          <div>
+            <h2>Digital Marketing</h2>
+            <p>Strong knowledge in sales and Digital Marketing strategies.</p>
+            <button
+              id="dmarketingBtn"
+              onclick="toggleSection('dmarketing', 'dmarketingBtn')"
+              class="toggle-button"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <article id="interests" class="content">
+        <h1 class="sub-title-family">Interests</h1>
+        <p>
+          <br />
+          I am passionate about technology, I love the fields of Web
+          Development, Machine Learning, Cybersecurity and Networking. I am a
+          perpetual learner and love exploring new ideas on a daily basis.
+          Outside of technology, I love working on becoming the best version of
+          myself, whether through reading, music, workouts, or meditation.<br /><b>
+            Let's embrace the endless possibilities together.</b
+          >
+        </p>
+        <h1 class="sub-title-family">Family</h1>
+        <p>
+          <br />
+          My family is the foundation of my life and provides me with unwavering
+          support and motivation. We have faced many challenges, but our
+          resilience has carried us through. Comprised of my dedicated parents
+          and my loving sister, we form a close-knit family that travels life's
+          journey together. Their hardworking nature and determination inspire
+          me to strive for excellence in all my endeavors. They are not just my
+          family; they are my fuel, what drives me to push my limits and pursue
+          my dreams.
+        </p>
+        <div class="image-container-family">
+          <img src="images/cami.jpg" />
+          <img src="images/familia.jpg" />
+          <img src="images/familia2.jpg" />
+          <img src="images/familia3.jpg" />
+          <img src="images/tias.JPG" />
+        </div>
+      </article>
+
+      <article id="sports" class="content">
+        <h1 class="sub-title">Sports</h1>
+        <p>
+          <br />
+          Stepping onto the tennis court, I proudly hold the title of top ranked
+          player in Ecuador, securing
+          <strong
+            >an impressive #2 nationally and getting the #1 spot in my home
+            state.</strong
+          >
+          My tennis journey extends to the competitive stages of NCAA II and
+          NAIA collegiate levels of tennis, where each match serves as a
+          springboard for personal and professional growth. The multitude of
+          tournaments I have participated in has not only refined my skills as
+          an athlete, but has also equipped me with valuable life skills, making
+          me ready for the challenges of the real world.
+        </p>
+        <div class="image-container">
+          <img src="images/tenis3.jpg" />
+          <img src="images/tenis5.jpg" />
+          <img src="images/tenis4.jpg" />
+        </div>
+        <a href="https://opendorse.com/profile/mateo-flores" target="_blank"
+          ><i class="btn">My Tennis Page</i></a
+        >
+      </article>
+
+      <article id="dmarketing" class="content">
+        <h1 class="sub-title">Digital Marketing</h1>
+        <p>
+          <br />
+          By getting on the digital marketing journey, I have entered a world of
+          new skills and strategies. By learning the secrets of modern marketing
+          through social media, I have gained a new perspective that goes beyond
+          traditional approaches. This adventure has not only contributed to my
+          professional growth, but has also improved my sales skills. In a
+          landscape where social media dominates, I have gained valuable
+          insights that continue to shape my marketing prowess. Working with my
+          team on various projects, we have tried to improve our sales through
+          social media. This effort has also improved our collective approach to
+          using social media for sales. Understanding its power, we continually
+          refine our strategies for more effective marketing.
+        </p>
+      </article>
+    </div>
+
+    <!------------mywork--------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/portfolio.png" />
+            <div class="layer">
+              <h3>My Portfolio</h3>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/udpchat.png" />
+            <div class="layer">
+              <h3>UDP chat</h3>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/carproject.png" />
+            <div class="layer">
+              <h3>PiCarX Project</h3>
+            </div>
+          </div>
+        </div>
+        <a href="seemore.html" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ------------contact------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-solid fa-share"></i>floresmateo226@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>6813400888</p>
+            <div class="social-icons">
+              <a href="https://wa.link/vxbfyg" target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="https://instagram.com/mateo_flores3/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/mateo.flores.3950/"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mateo-floresc"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Maflores1" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://opendorse.com/profile/mateo-flores"
+                target="_blank"
+                ><i class="fa-solid fa-baseball"></i
+              ></a>
+            </div>
+            <a href="images/mateoflorescv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+                autocomplete="name"
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+                autocomplete="email"
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyrigth Mateo Flores.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname, event) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxklaMNsTByrH4b6w4Dph_LkMW0u6OKgXK77l470oMDD6TEjxRCn7py4qMlDE3bOV0g/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      function toggleSection(sectionID, buttonID) {
+        const section = document.getElementById(sectionID);
+        const button = document.getElementById(buttonID);
+
+        section.classList.toggle("open");
+
+        if (section.classList.contains("open")) {
+          button.textContent = "Show less";
+        } else {
+          button.textContent = "Learn more";
+        }
+      }
+    </script>
+  </body>
+</html>
