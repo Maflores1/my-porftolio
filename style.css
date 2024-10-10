@@ -189,7 +189,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: #4640422f;
     transform: translateY(-10px);
 }
 .content p {
@@ -232,7 +232,7 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 40px;
     margin-top: 50px; 
 }
@@ -253,7 +253,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.6), #1410112f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -286,7 +286,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff00b7;
+    border: 1px solid #fff;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -336,7 +336,7 @@ nav ul li a:hover::after{
 
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #1410112f;
 }
 
 .contact-right form{
@@ -359,6 +359,10 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.btn2:hover{
+    background: #ff004f;
 }
 
 .copyright{
